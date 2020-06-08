@@ -1,22 +1,63 @@
-#full {
-    height: 100vh;
-    width: 100vw;
+#hero {
+    height:100vh;
+    width:100vw;
+    max-width: 100%;
 
-    display:flex;
+    display: flex;
     justify-content:center;
     align-items:center;
+
+    background: linear-gradient(45deg, #FF8484, #FF9F1C, #2ecc71, #1abc9c, #3498db, #9b59b6);
+    background-size: 600% 600%;
+
+    -webkit-animation: gradient 30s ease infinite;
+    -moz-animation: gradient 30s ease infinite;
+    animation: gradient 30s ease infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 100%}
+    100%{background-position:100% 0%}
+}
+
+.full {
+    height:100vh;
+    width:100vw;
+}
+
+.white {
+    color: antiquewhite;
 }
 
 body {
     margin:0; 
-    height:100vh; 
-    width:100vw;  
+    max-width: 100%;
 }
 
-h1, h2, h3 {
+.header {
+    position: fixed;
+    width: 100vw;
+    max-width: 100vw;
+    background-color: transparent;
+    -webkit-transition: background-color 500ms ease;
+    -ms-transition: background-color 500ms ease;
+    transition: background-color 500ms ease;
+}
+
+.transition {
+    background-color: #000000;
+    -webkit-transition: background-color 500ms ease;
+    -ms-transition: background-color 500ms ease;
+    transition: background-color 500ms ease;
+}
+
+
+/* Fonts */
+h1, h2 {
     font-family: 'Cabin', sans-serif;
 }
-h4, h5, h6 {
+h3, h4, h5, h6 {
     font-family: 'Cormorant', serif;
 }
 

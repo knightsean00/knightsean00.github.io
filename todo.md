@@ -1,0 +1,1 @@
+Add waves to hero section
