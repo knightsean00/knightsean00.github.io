@@ -13,7 +13,23 @@ $(window).scroll(function () {
 });
 
 function menuToggle() {
-    alert("Toggle detected");
+    if($(".menu").hasClass("menu-display")) {
+        $(".menu").removeClass("menu-display");
+        // $('html, body').css({
+        //     overflow: 'auto',
+        //     height: 'auto'
+        // });
+        
+
+    } else {
+        $(".menu").addClass("menu-display");
+        // $('html, body').css({
+        //     overflow: 'hidden',
+        //     height: '100%'
+        // });
+        
+
+    }
 }
 
 

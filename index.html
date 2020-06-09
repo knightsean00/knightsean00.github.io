@@ -12,15 +12,52 @@
 
     <body>
         <div class="header">
-            <div class="container hide-mobile">
-                <h1 class="header-text">this is the header, i don't know what will go here yet but we'll figure it out together</h1>
+            <div class="header-container hide-mobile">
+                <div>
+                    <a class="header-text header-title">Sean Knight</a>
+                </div>
+                <div>
+                    <ul class="header-text">
+                        <li><a class="" href="">About Me</a></li>
+                        <li><a href="">Projects</a></li>
+                        <li><a href="">Resume</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="container hide-desktop hide-tablet">
-                <svg onclick="menuToggle()" viewBox="0 0 100 75" width="30" height="30">
-                    <rect class="hamburger" width="100" height="15" rx="6"></rect>
-                    <rect class="hamburger" y="30" width="100" height="15" rx="6"></rect>
-                    <rect class="hamburger" y="60" width="100" height="15" rx="6"></rect>
-                </svg>
+            <div class="header-container hide-desktop hide-tablet">
+                <div>
+                    <h1 class="header-text">Sean Knight</h1>
+                </div>
+                <div>
+                    <svg onclick="menuToggle()" viewBox="0 0 100 75" width="30" height="30">
+                        <rect class="hamburger" width="100" height="15" rx="6"></rect>
+                        <rect class="hamburger" y="30" width="100" height="15" rx="6"></rect>
+                        <rect class="hamburger" y="60" width="100" height="15" rx="6"></rect>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="hide-desktop hide-tablet menu">
+            <div class="header-container" style="flex: auto;">
+                <div>
+                    <h1>Menu</h1>
+                </div>
+                <div>
+                    <svg onclick="menuToggle()" viewBox="0 0 100 100" width="30" height="30">
+                        <g transform="matrix(0.976026,-0.976026,1.09909,1.09909,-20.5994,86.0127)">
+                            <rect x="18.392" y="10.909" width="72.448" height="9.65" rx="6"/>
+                        </g>
+                        <g transform="matrix(-0.976026,-0.976026,1.09909,-1.09909,86.0127,120.599)">
+                            <rect x="18.392" y="10.909" width="72.448" height="9.65" rx="6"/>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="menu-links">
+                <div><a href="">Item One</a></div>
+                <div><a href="">Item One</a></div>
+                <div><a href="">Item One</a></div>
             </div>
         </div>
 
@@ -30,13 +67,15 @@
             <h1 class="white hide-desktop hide-mobile">you're a tablet!</h1>
         </div>
 
-        <div class="container">
-            <h1>Welcome to my humble abode</h1>
-            <h3>Testing</h3>
-            <p>Lmao</p>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="section about-me">
+            <div class="center">
+                <h1>About Me</h1>
+            </div>
+        </div>
+        <div class="section projects">
+            <div class="center">
+                <h1>Projects</h1>
+            </div>
         </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
