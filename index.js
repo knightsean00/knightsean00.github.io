@@ -1,14 +1,20 @@
 $(window).scroll(function () {
     console.log($(window).scrollTop())
-    if ($(window).scrollTop() > $(window).height()) {
-        $(".header").addClass("transition");
+    if ($(window).scrollTop() > 0) {
+        $(".header").addClass("header-transition");
+        $(".hamburger").addClass("hamburger-transition");
+        $(".header-text").addClass("header-text-transition");
     } 
-    else if($(window).scrollTop() < $(window).height() && $(window).scrollTop() > 0) {
-        $(".header").removeClass("transition");
+    else if($(window).scrollTop() == 0) {
+        $(".header").removeClass("header-transition");
+        $(".hamburger").removeClass("hamburger-transition");
+        $(".header-text").removeClass("header-text-transition");
     }
 });
 
-
+function menuToggle() {
+    alert("Toggle detected");
+}
 
 
 

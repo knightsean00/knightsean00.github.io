@@ -27,7 +27,7 @@
 }
 
 .white {
-    color: antiquewhite;
+    color: white;
 }
 
 body {
@@ -45,13 +45,41 @@ body {
     transition: background-color 500ms ease;
 }
 
-.transition {
-    background-color: #000000;
+.header-transition {
+    background-color: white;
+    /* outline? */
     -webkit-transition: background-color 500ms ease;
     -ms-transition: background-color 500ms ease;
     transition: background-color 500ms ease;
 }
 
+.hamburger {
+    fill: white;
+    -webkit-transition: fill 500ms ease;
+    -ms-transition: fill 500ms ease;
+    transition: fill 500ms ease;
+}
+
+.hamburger-transition {
+    fill: black;
+    -webkit-transition: fill 500ms ease;
+    -ms-transition: fill 500ms ease;
+    transition: fill 500ms ease;
+}
+
+.header-text {
+    color: white;
+    -webkit-transition: color 500ms ease;
+    -ms-transition: color 500ms ease;
+    transition: color 500ms ease;
+}
+
+.header-text-transition {
+    color: black;
+    -webkit-transition: color 500ms ease;
+    -ms-transition: color 500ms ease;
+    transition: color 500ms ease;
+}
 
 /* Fonts */
 h1, h2 {
