@@ -25,13 +25,20 @@ $(window).scroll(function () {
         $(".projects-link").removeClass("active");
         $(".projects-menu-link").removeClass("active-menu");
     }
+
+    if ($(window).width() > 575 && $(window).scrollTop() > $(window).height() * .5) {
+        $(".scroll-down").removeClass("bob");
+    }
+    else if ($(window).width() > 575 && $(window).scrollTop() < $(window).height() * .5) {
+        $(".scroll-down").addClass("bob");
+    }
 });
 
 $(".about-me-link").click(function() {
     document.getElementById("about").scrollIntoView({behavior: "smooth", block: "start"});
 });
 $(".about-me-menu-link").click(function() {
-    $(".menu").removeClass("menu-display");
+    menuToggle();
     document.getElementById("about").scrollIntoView({behavior: "smooth", block: "start"});
 });
 
@@ -43,7 +50,7 @@ $(".projects-link").click(function () {
     document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 $(".projects-menu-link").click(function () {
-    $(".menu").removeClass("menu-display");
+    menuToggle();
     document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
@@ -53,19 +60,19 @@ function menuToggle() {
     if($(".menu").hasClass("menu-display")) {
         $(".menu").removeClass("menu-display");
         $(".scroll-down").addClass("bob");
-        // $('html, body').css({
-        //     overflow: 'auto',
-        //     height: 'auto'
-        // });
+        $('html, body').css({
+            overflow: 'auto',
+            // height: 'auto'
+        });
         
 
     } else {
         $(".menu").addClass("menu-display");
         $(".scroll-down").removeClass("bob");
-        // $('html, body').css({
-        //     overflow: 'hidden',
-        //     height: '100%'
-        // });
+        $('html, body').css({
+            overflow: 'hidden',
+            // height: '100%'
+        });
         
 
     }
