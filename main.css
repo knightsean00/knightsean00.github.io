@@ -63,7 +63,7 @@
     font-family: 'Cabin', sans-serif;
     font-size: 2em;
     color: inherit;
-    opacity: .5;
+    color: #7f7f7f;
     text-decoration: none;
     cursor: pointer;
 }
@@ -109,10 +109,10 @@
 
 @keyframes bob {
     0% {
-        transform: translate(0, -25%);
+        transform: translate(0, -80%);
     }
     100% {
-        transform: translate(0, 25%);
+        transform: translate(0, -30%);
     }
 }
 
@@ -206,10 +206,16 @@
 }
 
 .active {
-    opacity: .8 !important;
+    opacity: 1 !important;
 }
 
+.active-menu {
+    color: #000000 !important;
+}
 
+.scroll-down {
+    cursor: pointer;
+}
 
 /* Fonts */
 h1, h2 {
