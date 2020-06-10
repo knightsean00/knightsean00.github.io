@@ -3,6 +3,7 @@
     <head>
         <meta charset=utf-8 />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme" content="#ffffff">
         <title>Sean Knight</title>
         <link href="main.css" rel="stylesheet" type="text/css">
         <link href="grid.css" rel="stylesheet" type="text/css">
@@ -11,15 +12,16 @@
     </head>
 
     <body>
+        <!-- Basic Header -->
         <div class="header">
             <div class="header-container hide-mobile">
                 <div>
-                    <a class="header-text header-title">Sean Knight</a>
+                    <h1 class="header-text">Sean Knight</h1>
                 </div>
                 <div>
                     <ul class="header-text">
-                        <li><a class="" href="">About Me</a></li>
-                        <li><a href="">Projects</a></li>
+                        <li><a class="about-me-link">About Me</a></li>
+                        <li><a class="projects-link">Projects</a></li>
                         <li><a href="">Resume</a></li>
                     </ul>
                 </div>
@@ -55,27 +57,53 @@
                 </div>
             </div>
             <div class="menu-links">
-                <div><a href="">Item One</a></div>
-                <div><a href="">Item One</a></div>
-                <div><a href="">Item One</a></div>
+                <div><a class="about-me-link">About Me</a></div>
+                <div><a class="projects-link">Projects</a></div>
+                <div><a href="sean-knight-resume.pdf" download>Resume</a></div>
+            </div>
+            <div class="menu-social">
+                <h1>git, link, email, osu, steam?</h1>
             </div>
         </div>
 
         <div id="hero">
-            <h1 class="white hide-desktop hide-tablet">mobile</h1>
-            <h1 class="white hide-mobile hide-tablet">desktop</h1>
-            <h1 class="white hide-desktop hide-mobile">you're a tablet!</h1>
+            <div class="rows center-text">
+                <div class="row">
+                    <h1 class="white">Welcome!</h1>
+                </div>
+                <div class="row about-me-link">
+                    <a>Scroll down</a>
+                </div>
+            </div>
         </div>
 
-        <div class="section about-me">
-            <div class="center">
+        <div class="section about-me" id="about">
+            <div class="section-title">
                 <h1>About Me</h1>
             </div>
+            <div class="columns">
+                <div class="column center-text">
+                    <img src="placeholder.png">
+                </div>
+                <div class="column" style="display: flex; justify-content: center; align-items: center;">
+                    <div>
+                        <p>Hello! My name is Sean and I am a rising second-year at MIT studying Cognition and Computation. I am primarily
+                            interested in the interesection between neuroscience and computer science, as well as how each of the fields can 
+                            inform the other.</p>
+                        <p>Additionally, I am seeking a minor in Business Management and a concentration in Comparative Media Studies.</p>
+                        <p>Aside from work and projects, I usually spend my spare time playing video games or playing 
+                        the cello.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="section projects">
-            <div class="center">
+        <div class="section projects" id="projects">
+            <div class="section-title">
                 <h1>Projects</h1>
             </div>
+        </div>
+        <div class="section">
+
         </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
