@@ -18,10 +18,9 @@
 
 #hero > .rows > .row > h1 {
     font-size: 3em;
-    opacity: .95;
 }
 
-#hero > .rows > .row > a {
+.about-me-link > svg {
     cursor: pointer;
 }
 
@@ -78,6 +77,20 @@
     align-items: center;
 }
 
+.menu-social-col {
+    flex: 1;
+    padding-left:2vw;
+    padding-right: 2vw;
+    opacity: .5;
+}
+
+.menu-social-col:hover {
+    opacity: 1;
+    -webkit-transition: opacity 1000ms ease;
+    -ms-transition: opacity 1000ms ease;
+    transition: opacity 1000ms ease;
+}
+
 
 .about-me {
     background-color: #f5e8f2;
@@ -85,6 +98,22 @@
 
 .projects {
     background-color: #e8f2f5;
+}
+
+.bob {
+    -webkit-animation: bob .5s ease-in infinite;
+    -moz-animation: bob .5s ease-in infinite;
+    animation: bob .5s ease-in infinite;
+    animation-direction: alternate;
+}
+
+@keyframes bob {
+    0% {
+        transform: translate(0, -25%);
+    }
+    100% {
+        transform: translate(0, 25%);
+    }
 }
 
 
