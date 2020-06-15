@@ -25,21 +25,7 @@ body {
     flex: 1;
 }
 
-.rows {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    
-    justify-content: space-evenly; 
-/*     
-    outline: 5px dotted black; */
-}
 
-.row {
-    flex: 1;
-}
 
 img {
     max-width: 80%;
@@ -59,14 +45,20 @@ img {
     height: 100vh;
     width: 100vw;
     max-width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    justify-content: start;
 }
 
-.section-title {
-    padding-top: 5vh;
-    width:100vw;
-    max-width: 100%;
-    display: flex;
-    justify-content:center;
+
+.section-row {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    flex: 1;
+    text-align: center;
 }
 
 
@@ -74,11 +66,31 @@ img {
     .hide-desktop { 
        display: none !important; 
     }
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        width: 15%;
+    }
+    .footer-social > div {
+        flex: 1;
+        padding-left:.5vw;
+        padding-right: .5vw;
+    }
 } 
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
     .hide-tablet { 
        display: none !important; 
+    }
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+        width: 30%
+    }
+    .footer-social > div {
+        flex: 1;
+        padding-left:1vw;
+        padding-right: 1vw;
     }
 } 
 
@@ -88,5 +100,14 @@ img {
     }
     .column {
         min-width: 80vw;
+    }
+    .footer-social {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer-social > div {
+        flex: 1;
+        padding-left:2vw;
+        padding-right: 2vw;
     }
 }
