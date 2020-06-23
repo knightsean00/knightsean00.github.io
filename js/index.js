@@ -1,3 +1,7 @@
+var aboutHeight = $(window).height();
+var projectsHeight = $(".about-me").height() + $(window).height();
+
+
 $(window).scroll(function () {
 
     // Transparent header toggle
@@ -13,14 +17,14 @@ $(window).scroll(function () {
     }
 
     // Section link activation
-    if ($(window).scrollTop() > $(window).height() && $(window).scrollTop() < $(window).height() * 2) {
+    if ($(window).scrollTop() > aboutHeight && $(window).scrollTop() < projectsHeight) {
         $(".about-me-link").addClass("active");
         $(".about-me-menu-link").addClass("active-menu");
     } else {
         $(".about-me-link").removeClass("active");
         $(".about-me-menu-link").removeClass("active-menu");
     }
-    if ($(window).scrollTop() > $(window).height() * 2 && $(window).scrollTop() < $(window).height() * 3) {
+    if ($(window).scrollTop() > projectsHeight && $(window).scrollTop() < projectsHeight + $(".projects").height()) {
         $(".projects-link").addClass("active");
         $(".projects-menu-link").addClass("active-menu");
     } else {
