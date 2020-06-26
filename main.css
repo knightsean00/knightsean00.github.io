@@ -1,0 +1,25 @@
+#full {
+    height: 100vh;
+    width: 100vw;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+body {
+    margin:0; 
+    height:100vh; 
+    width:100vw;  
+}
+
+h1, h2, h3 {
+    font-family: 'Cabin', sans-serif;
+}
+h4, h5, h6 {
+    font-family: 'Cormorant', serif;
+}
+
+p {
+    font-family: 'Hind Siliguri', sans-serif;
+}
