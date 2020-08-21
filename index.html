@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#ffffff">
         <title>Sean Knight</title>
-        <meta name="description" content="Sean Knight is a MIT student studying computer science, neuroscience, business management, and comparative media studies">
+        <meta name="description" content="Sean Knight is an MIT student studying computer science, neuroscience, business management, and comparative media studies">
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <link href="css/grid.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Palanquin&display=swap" rel="stylesheet">
@@ -17,21 +17,21 @@
         <div class="header">
             <div class="header-container hide-mobile">
                 <div>
-                    <h1 class="header-text">Sean Knight</h1>
+                    <h1 class="header-text align-left">Sean Knight</h1>
                 </div>
                 <div>
-                    <ul class="header-text">
+                    <ul class="header-text align-right">
                         <li><a class="about-me-link">About Me</a></li>
-                        <li><a class="projects-link">Projects</a></li>
+                        <li><a class="music-link">Music</a></li>
                         <li><a href="sean-knight-resume.pdf" target="_blank">Resume</a></li>
                     </ul>
                 </div>
             </div>
             <div class="header-container hide-desktop hide-tablet">
                 <div>
-                    <h1 class="header-text">Sean Knight</h1>
+                    <h1 class="header-text align-left">Sean Knight</h1>
                 </div>
-                <div>
+                <div class="align-right">
                     <svg onclick="menuToggle()" viewBox="0 0 100 75" width="30" height="30">
                         <rect class="hamburger" width="100" height="15" rx="6"></rect>
                         <rect class="hamburger" y="30" width="100" height="15" rx="6"></rect>
@@ -43,11 +43,11 @@
 
         <!-- Mobile Header Menu -->
         <div class="hide-desktop hide-tablet menu">
-            <div class="header-container" style="flex: auto;">
-                <div>
+            <div class="header-container">
+                <div class="align-left">
                     <h1>Menu</h1>
                 </div>
-                <div>
+                <div class="align-right">
                     <svg onclick="menuToggle()" viewBox="0 0 100 100" width="30" height="30">
                         <g transform="matrix(0.976026,-0.976026,1.09909,1.09909,-20.5994,86.0127)">
                             <rect x="18.392" y="10.909" width="72.448" height="9.65" rx="6"/>
@@ -58,10 +58,10 @@
                     </svg>
                 </div>
             </div>
-            <div class="menu-links">
-                <div><a class="about-me-menu-link">About Me</a></div>
-                <div><a class="projects-menu-link">Projects</a></div>
-                <div><a href="sean-knight-resume.pdf" target="_blank">Resume</a></div>
+            <div class="menu-links-container">
+                <div><a class="about-me-menu-link align-center">About Me</a></div>
+                <div><a class="music-menu-link align-center">Music</a></div>
+                <div><a class="align-center" href="sean-knight-resume.pdf" target="_blank">Resume</a></div>
             </div>
             <div class="menu-social">
                 <div class="menu-social-col">
@@ -112,34 +112,50 @@
         </div>
 
         <!-- About Me -->
-        <div class="section about-me" id="about">
-            <div class="section-row" style="flex: 0;">
-                <h1>About Me</h1>
+        <div class="about-me" id="about">
+            <div>
+                <h1 class="align-center">About Me</h1>
             </div>
-            <div class="section-row">
-                <svg width="100%" height="100%" viewBox="0 0 500 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-                    <circle cx="250" cy="250" r="250" style="fill:rgb(235,235,235);"/>
-                    <g transform="matrix(1,0,0,1,-119.314,-45.4846)">
-                        <text x="215.564px" y="234.435px" style="font-family:'Montserrat-Bold', 'Montserrat';font-weight:700;font-size:100px;fill:rgb(128,128,128);">inser<tspan x="475.564px " y="234.435px ">t</tspan></text>
-                        <text x="179.064px" y="334.435px" style="font-family:'Montserrat-Bold', 'Montserrat';font-weight:700;font-size:100px;fill:rgb(128,128,128);">pic<tspan x="338.064px " y="334.435px ">t</tspan>ur<tspan x="492.464px " y="334.435px ">e</tspan></text>
-                        <text x="248.264px" y="434.435px" style="font-family:'Montserrat-Bold', 'Montserrat';font-weight:700;font-size:100px;fill:rgb(128,128,128);">h<tspan x="317.964px 381.064px 423.264px " y="434.435px 434.435px 434.435px ">ere</tspan></text>
-                    </g>
-                </svg>
-            </div>
-            <div class="section-row">
-                <p>Hi! My name is Sean. I am currently a rising second-year at MIT studying Computation and Cognition. I am primarily interested in how neuroscience and computer science intersect, as well as how each field can inform the other.</p>
-                <p>Aside from my primary field of study, I am also seeking a minor in Business Management and a concentration in Comparative Media Studies.</p>
-                <p>I usually spend my spare time playing video games or the cello.</p>
+            <div class="align-center">
+                <p>Hi! My name is Sean. I am currently a second-year at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
+                    computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to learn more about the intersection 
+                    between the two fields, as well as how each of the fields can inform the other.</p>
+                <p>This past summer, I spent my time conducting research at the <a href="https://quest.mit.edu/">MIT Quest for Intelligence Initiative</a>. Our team’s goal was 
+                    primarily to improve sub-seasonal weather forecasting using machine learning and thereby improve water management.</p>
+                <p>At MIT, I serve as a committee member for the Student Events Board (formerly UA Events) and a member of 
+                    logistics and marketing team for <a href="https://hackmit.org/">HackMIT</a>.</p>
+                <p>Aside from my primary field of study, I am also seeking a minor in Business Management and Comparative Media Studies. 
+                    In my spare time I can usually be found playing video games or practicing cello/piano. </p>
             </div>
         </div>
 
         <!-- Projects -->
-        <div class="section projects" id="projects">
-            <div class="section-row">
-                <h1>Projects</h1>
+        <div class="music" id="music">
+            <div>
+                <h1 class="align-center">Music</h1>
             </div>
-            <div class="section-row">
-                <h1>coming soon...</h1>
+            <div class="cards-wrapper">
+                <div class="card">
+                    <div>
+                        <a href="https://store.steampowered.com/app/1206330/Florence__Original_Soundtrack/"><img src="images/florence.jpg"></a>
+                    </div>
+                    <div class="card-description">
+                        <h3>Florence (from <i>Florence</i>) by Kevin Penkin</h3>
+                        <p>The opening song for the best instrumental album you will probably ever hear in your life.
+                            Kevin Penkin is an amazing composer and has made many other great soundtracks for shows such
+                            as <i>Made in Abyss</i> and <i>The Rising of the Shield Hero</i>. His songs always flow beautifully
+                            and are excellent at capturing the mood that the story is trying to present. I'll probably end up 
+                            transcribing the rest of this album and performing some sort of medley of the themes.
+                        </p>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://musescore.com/user/35722062/scores/6304812">
+                            <svg width="100%" height="100%" viewBox="0 0 1000 1000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <path d="M500,0C775.958,0 1000,224.042 1000,500C1000,775.958 775.958,1000 500,1000C224.042,1000 0,775.958 0,500C0,224.042 224.042,0 500,0ZM384.928,471.994C362.996,441.664 319.761,421.755 279.476,421.755C212.908,421.755 151.005,462.648 151.005,574.869L151.005,763.009C151.005,775.761 161.348,786.026 174.099,786.026C186.859,786.026 197.202,775.684 197.202,763.009L197.202,574.869C197.179,489.583 238.335,467.872 279.476,467.872C320.616,467.872 361.757,502.07 361.757,559.788L361.757,763.009C361.757,775.761 372.1,786.026 384.851,786.026L385.051,786.026C397.802,786.026 408.146,775.761 408.146,763.009L408.146,559.788C408.146,502.07 449.286,467.872 490.427,467.872C516.546,467.872 572.701,479.473 572.701,559.788L574.262,628.042C574.262,754.159 658.914,786.026 712.784,786.026C766.653,786.026 847.349,748.818 848.995,637.232L848.995,458.672C848.995,427.956 802.668,427.956 802.668,458.672L802.668,637.232C802.668,721.884 739.718,739.915 712.784,739.915C685.85,739.915 620.437,727.225 620.437,628.042L618.898,563.522C618.898,467.862 558.871,417.907 490.427,417.907C450.141,417.907 406.861,441.664 384.928,471.994ZM743.118,357.63C743.118,340.793 729.482,327.156 712.643,327.156C695.806,327.156 682.169,340.793 682.169,357.63C682.169,374.469 695.806,388.105 712.643,388.105C729.482,388.105 743.118,374.469 743.118,357.63ZM615.378,356.342C615.378,310.169 649.385,260.148 708.187,260.148C766.989,260.148 800.881,310.169 800.881,356.342C800.881,390.973 847.163,390.973 847.163,356.342C847.163,275.539 786.228,213.974 708.187,213.974C630.146,213.974 569.228,275.539 569.228,356.342C569.235,390.973 615.378,390.973 615.378,356.342Z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
 

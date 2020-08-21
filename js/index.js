@@ -1,9 +1,7 @@
-var aboutHeight = $(window).height();
-var projectsHeight = $(".about-me").height() + $(window).height();
-
+var aboutHeight = $("#hero").height();
+var musicHeight = $(".about-me").height() + $("#hero").height();
 
 $(window).scroll(function () {
-
     // Transparent header toggle
     if ($(window).scrollTop() > 0) {
         $(".header").addClass("header-transition");
@@ -17,28 +15,20 @@ $(window).scroll(function () {
     }
 
     // Section link activation
-    if ($(window).scrollTop() > aboutHeight && $(window).scrollTop() < projectsHeight) {
+    if ($(window).scrollTop() > aboutHeight && $(window).scrollTop() < musicHeight) {
         $(".about-me-link").addClass("active");
         $(".about-me-menu-link").addClass("active-menu");
     } else {
         $(".about-me-link").removeClass("active");
         $(".about-me-menu-link").removeClass("active-menu");
     }
-    if ($(window).scrollTop() > projectsHeight && $(window).scrollTop() < projectsHeight + $(".projects").height()) {
-        $(".projects-link").addClass("active");
-        $(".projects-menu-link").addClass("active-menu");
+    if ($(window).scrollTop() > musicHeight && $(window).scrollTop() < musicHeight + $(".projects").height()) {
+        $(".music-link").addClass("active");
+        $(".music-menu-link").addClass("active-menu");
     } else {
-        $(".projects-link").removeClass("active");
-        $(".projects-menu-link").removeClass("active-menu");
+        $(".music-link").removeClass("active");
+        $(".music-menu-link").removeClass("active-menu");
     }
-
-    // Toggle bobbing to prevent overflow
-    // if ($(window).width() > 575 && $(window).scrollTop() > $(window).height() * .5) {
-    //     $(".scroll-down").removeClass("bob");
-    // }
-    // else if ($(window).width() > 575 && $(window).scrollTop() < $(window).height() * .5) {
-    //     $(".scroll-down").addClass("bob");
-    // }
 });
 
 $(".about-me-link").click(function() {
@@ -53,10 +43,10 @@ $(".scroll-down").click(function() {
     document.getElementById("about").scrollIntoView({behavior: "smooth", block: "start"});
 });
 
-$(".projects-link").click(function () {
+$(".music-link").click(function () {
     document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
 });
-$(".projects-menu-link").click(function () {
+$(".music-menu-link").click(function () {
     menuToggle();
     document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
 });
@@ -68,13 +58,11 @@ $(".projects-menu-link").click(function () {
 function menuToggle() {
     if ($(".menu").hasClass("menu-display")) {
         $(".menu").removeClass("menu-display");
-        $(".scroll-down").addClass("bob");
         $('html, body').css({
             overflow: 'auto',
         });
     } else {
         $(".menu").addClass("menu-display");
-        $(".scroll-down").removeClass("bob");
         $('html, body').css({
             overflow: 'hidden',
         });
