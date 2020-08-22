@@ -22,7 +22,7 @@ $(window).scroll(function () {
         $(".about-me-link").removeClass("active");
         $(".about-me-menu-link").removeClass("active-menu");
     }
-    if ($(window).scrollTop() > musicHeight && $(window).scrollTop() < musicHeight + $(".projects").height()) {
+    if ($(window).scrollTop() > musicHeight && $(window).scrollTop() < musicHeight + $(".music").height()) {
         $(".music-link").addClass("active");
         $(".music-menu-link").addClass("active-menu");
     } else {
@@ -44,11 +44,11 @@ $(".scroll-down").click(function() {
 });
 
 $(".music-link").click(function () {
-    document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
+    document.getElementById("music").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 $(".music-menu-link").click(function () {
     menuToggle();
-    document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
+    document.getElementById("music").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 
