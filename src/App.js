@@ -1,7 +1,7 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from './routes/home/Home';
+import NotFound from './routes/404/NotFound';
 
 class App extends React.Component {
 	render() {
@@ -9,13 +9,13 @@ class App extends React.Component {
 			<Router>
 				<Switch>
 					<Route exact path="/">
-						<h1>Home</h1>
+						<Home/>
 					</Route>
 					<Route exact path="/test">
 						<h1>test</h1>
 					</Route>
 					<Route path="/">
-						<h1>404</h1>
+						<NotFound/>
 					</Route>
 				</Switch>
 			</Router>

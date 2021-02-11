@@ -1,0 +1,45 @@
+$size-up: ("xs": "sm", "sm": "md", "md": "lg", "lg": "xl");
+
+@each $size, $break in $breakpoints {
+    @for $i from 1 through $grid-columns {
+        .col-#{$size}-#{$i} {
+            grid-column: span ($i);
+        }
+    }
+    
+    @if(map-get($size-up, $size)) {
+        @media (min-width: $break) and (max-width: map-get($breakpoints, map-get($size-up, $size))) {
+            @for $i from 1 through $grid-columns {
+                .col-#{$size}-#{$i} {
+                    grid-column: span ($i);
+                }
+            }
+            .hidden-#{$size} {
+                display:none;
+            }
+        }
+    } @else {
+        @media (min-width: $break) {
+            @for $i from 1 through $grid-columns {
+                .col-#{$size}-#{$i} {
+                    grid-column: span ($i);
+                }
+            }
+            .hidden-#{$size} {
+                display:none;
+            }
+        }
+    }
+    
+}
+
+.container {
+    max-width: $max-page-width;
+    margin: 0 auto;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-gap: $gutter;
+}

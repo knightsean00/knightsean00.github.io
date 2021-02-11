@@ -1,0 +1,14 @@
+$primary-color: #61D095;
+// $primary-color: #48BF84;
+// $primary-color: #8FCB9B;
+
+// Typography
+$base-size: .75rem;
+$scaling: .25;
+
+// Grid
+$grid-columns: 12;
+$gutter: 1.5rem;
+$max-page-width: 1200px;
+$contained: 80%;
+$breakpoints: ("xs": 0px, "sm": 576px, "md": 768px, "lg": 992px, "xl": 1200px);
