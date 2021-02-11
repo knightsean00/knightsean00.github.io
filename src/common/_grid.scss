@@ -43,3 +43,7 @@ $size-up: ("xs": "sm", "sm": "md", "md": "lg", "lg": "xl");
     grid-template-columns: repeat($grid-columns, 1fr);
     grid-gap: $gutter;
 }
+
+.d-none {
+    display:none;
+}
