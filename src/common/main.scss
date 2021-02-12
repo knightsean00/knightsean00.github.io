@@ -67,7 +67,7 @@ body {
 }
 
 
-@media (max-width: 1400px) {
+@media (max-width: map-get($breakpoints, "xl")) {
     .section-title {
         position:relative;
         text-align:center;
@@ -77,12 +77,13 @@ body {
     }
 }
 
-@media (min-width: 1401px) {
+@media (min-width: map-get($breakpoints, "xl") + 1px) {
     .section-title {
         position:fixed;
         top: 50%;
         // left: calc(50% + 600px + 1.5rem);
-        left: clamp(calc(50vw + 600px), calc(50vw + 600px + 5vw), calc(50vw + 1200px));
+        left: clamp(calc(50vw + 575px), 92.5vw, calc(50vw + 850px));
+        // left: calc(50vw + 550px + 2vw);
         writing-mode: vertical-rl;
         text-orientation: upright;
         letter-spacing: .25rem;

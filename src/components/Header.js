@@ -14,7 +14,7 @@ class Header extends React.Component {
         this.scrollMenu = this.scrollMenu.bind(this);
     }
 
-    toggleMenu() {
+    toggleMenu(event) {
         this.setState({menuOpen: !this.state.menuOpen});
     }
 
@@ -46,7 +46,7 @@ class Header extends React.Component {
             document.body.style.overflow = "auto";
             return(
                 <header>
-                    <div className="container pl-2 pr-2">
+                    <div className="container pl-1 pr-1">
                         <ul className={desktopHeader}>
                             {
                                 this.props.order.map(i => {
@@ -64,9 +64,9 @@ class Header extends React.Component {
         else {
             document.body.style.overflow = "hidden";
             return (
-                <div className="mobile-menu">
+                <div className="mobile-menu hidden-lg hidden-xl">
                     <h4 className="header-text top" onClick={this.toggleMenu}>Close</h4>
-                    <ul className="pl-2 pr-2 mobile-links">
+                    <ul className="pl-1 pr-1 pt-2 pb-2 mobile-links">
                         {
                             this.props.order.map(i => {
                                 return <li key={i}><h2 onClick={this.scrollMenu} className="header-text">{i}</h2></li>

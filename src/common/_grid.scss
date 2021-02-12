@@ -60,8 +60,18 @@ $size-up: ("xs": "sm", "sm": "md", "md": "lg", "lg": "xl");
     }
 } 
 
+@media(min-width: map-get($breakpoints, "xl") + 1px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+@media(max-width: map-get($breakpoints, "xl")) {
+    .container {
+        max-width: 960px;
+    }
+}
+
 .container {
-    max-width: $max-page-width;
     margin: 0 auto;
 }
 

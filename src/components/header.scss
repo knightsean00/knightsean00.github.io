@@ -33,12 +33,17 @@ header {
 
 .fade > li > .header-text{
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    animation: fade 1s ease-in-out forwards;
 }
 
-.fade > h4 {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+@keyframes fade {
+    0% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 .mobile-menu {

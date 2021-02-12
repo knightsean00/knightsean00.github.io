@@ -2,6 +2,7 @@ import React from "react";
 import "../../common/main.scss";
 import "./home.scss";
 import Header from '../../components/Header';
+import Footer from "../../components/Footer";
 
 const extensionLink = "https://chrome.google.com/webstore/detail/busysquirrels/bcnejdoncdomkjldoifhampobhdedhki?hl=en-US"
 
@@ -60,7 +61,7 @@ class Home extends React.Component {
                 <div className="section bg-white" ref={this.about}>
                     <div className="container pt-5 pb-5">
                         <h2 className="section-title" onClick={this.scrollTo}>About</h2>
-                        <div className="section-text pl-2 pr-2">
+                        <div className="section-text pl-1 pr-1">
                             <p>Hi! My name is Sean. I am currently a second-year at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
                             computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to learn more about the intersection 
                             between the two fields, as well as how each of the fields can inform the other.</p>
@@ -80,6 +81,7 @@ class Home extends React.Component {
                 <div className="section bg-white" ref={this.music}>
                     <h2 className="section-title" onClick={this.scrollTo}>Music</h2>
                 </div>
+                <Footer />
             </div>
             
         )
