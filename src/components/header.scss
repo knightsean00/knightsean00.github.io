@@ -9,14 +9,14 @@ header {
 }
 
 .header-text {
-    opacity:.5;
+    opacity:.75;
     letter-spacing: .35rem;
     cursor:pointer;
     transition: opacity .25s ease-in-out;
 }
 
 .header-text:hover, .active {
-    opacity:.75;
+    opacity:.9;
     transition: opacity .25s ease-in-out;
 }
 
@@ -31,16 +31,37 @@ header {
     padding-inline-start: 0;
 }
 
+
+.fade > h4{
+    animation: fade-out 1s ease-in-out forwards;
+}
 .fade > li > .header-text{
-    opacity: 0;
-    animation: fade 1s ease-in-out forwards;
+    animation: fade-out 1s ease-in-out forwards;
 }
 
-@keyframes fade {
+.show > h4 {
+    animation: fade-in 1s ease-in-out backwards;
+}
+.show > li > .header-text {
+    animation: fade-in 1s ease-in-out backwards;
+}
+
+@keyframes fade-out {
     0% {
-        opacity: .5;
+        opacity: .75;
+        visibility: visible;
     }
     100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes fade-in {
+    100% {
+        opacity: .75;
+        visibility: visible;
+    }
+    0% {
         opacity: 0;
         visibility: hidden;
     }
@@ -68,6 +89,11 @@ header {
     justify-content: center;
     align-items: center;
     align-content: center;
+}
+
+.mobile-header {
+    display:flex;
+    justify-content: center;
 }
 
 .top {

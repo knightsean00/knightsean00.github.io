@@ -1,0 +1,40 @@
+@import "../common/variables";
+
+.card {
+    width: 100%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin-bottom: 5%;
+}
+
+.card > div > a > img {
+    object-fit: contain;
+    max-width:100%;
+    line-height: 0;
+}
+
+.card > div > a {
+    line-height: normal;
+    text-decoration: none;
+}
+
+.music-icons {
+    display:flex;
+    max-width: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media (min-width: map-get($breakpoints, "md")) and (max-width: map-get($breakpoints, "xl")) {
+    .card {
+        width: 45%;
+        max-width: 45%;
+    }
+}
+
+@media (min-width: map-get($breakpoints, "xl") + 1px) {
+    .card {
+        width: 45%;
+        max-width: 45%;
+    }
+}

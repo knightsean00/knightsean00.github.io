@@ -3,6 +3,9 @@ import "../../common/main.scss";
 import "./home.scss";
 import Header from '../../components/Header';
 import Footer from "../../components/Footer";
+import Card from "../../components/Card";
+import music from '../../common/music';
+import projects from '../../common/projects';
 
 const extensionLink = "https://chrome.google.com/webstore/detail/busysquirrels/bcnejdoncdomkjldoifhampobhdedhki?hl=en-US"
 
@@ -75,11 +78,29 @@ class Home extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div className="section bg-black" ref={this.projects}>
+                <div className="section bg-black pt-5 pb-5" ref={this.projects}>
                     <h2 className="section-title" onClick={this.scrollTo}>Projects</h2>
+                    <div className="container">
+                        <div className="card-container pl-1 pr-1">
+                            {
+                                projects.map(i => {
+                                    return <Card type="project" data={i} color="black" />
+                                })
+                            }
+                        </div>
+                    </div>
                 </div>
-                <div className="section bg-white" ref={this.music}>
+                <div className="section bg-white pt-5 pb-5" ref={this.music}>
                     <h2 className="section-title" onClick={this.scrollTo}>Music</h2>
+                    <div className="container">
+                        <div className="card-container pl-1 pr-1">
+                            {
+                                music.map(i => {
+                                    return <Card type="music" data={i} color="white" />
+                                })
+                            }
+                        </div>
+                    </div>
                 </div>
                 <Footer />
             </div>

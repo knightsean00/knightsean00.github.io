@@ -8,6 +8,8 @@ class Header extends React.Component {
         this.state = {
             scroll: window.scrollY,
             menuOpen: false,
+            desktopHeader: "header-links hidden-xs hidden-sm hidden-md",
+            mobileHeader: "mobile-header hidden-lg hidden-xl"
         }
         this.scrollListen = this.scrollListen.bind(this);
         this.toggleMenu = this.toggleMenu.bind(this);
@@ -15,7 +17,12 @@ class Header extends React.Component {
     }
 
     toggleMenu(event) {
-        this.setState({menuOpen: !this.state.menuOpen});
+        if (!event.target.parentElement.classList.contains("fade")) {
+            this.setState({menuOpen: !this.state.menuOpen,
+                desktopHeader: "header-links hidden-xs hidden-sm hidden-md",
+                mobileHeader: "mobile-header hidden-lg hidden-xl"
+            });
+        }
     }
 
     scrollMenu(event) {
@@ -27,7 +34,19 @@ class Header extends React.Component {
     }
 
     scrollListen() {
-        this.setState({scroll: window.scrollY});
+        this.setState({scroll: window.scrollY}, () => {
+            if (this.state.scroll > 0) {
+                this.setState({
+                    desktopHeader: "header-links fade hidden-xs hidden-sm hidden-md",
+                    mobileHeader: "mobile-header fade hidden-lg hidden-xl"
+                })
+            } else {
+                this.setState({
+                    desktopHeader: "header-links show hidden-xs hidden-sm hidden-md",
+                    mobileHeader: "mobile-header show hidden-lg hidden-xl"
+                })
+            }
+        });
     }
 
     componentDidMount() {
@@ -39,22 +58,19 @@ class Header extends React.Component {
     }
 
 	render() {
-        let desktopHeader = (this.state.scroll > 0) ? "header-links fade hidden-xs hidden-sm hidden-md" : "header-links hidden-xs hidden-sm hidden-md"
-        let mobileHeader = (this.state.scroll > 0) ? "fade hidden-lg hidden-xl" : "hidden-lg hidden-xl"
-        
         if (!this.state.menuOpen) {
             document.body.style.overflow = "auto";
             return(
                 <header>
                     <div className="container pl-1 pr-1">
-                        <ul className={desktopHeader}>
+                        <ul className={this.state.desktopHeader}>
                             {
                                 this.props.order.map(i => {
                                     return <li key={i}><h4 onClick={this.props.scrollTo} className="header-text">{i}</h4></li>
                                 })
                             }
                         </ul>
-                        <div className={mobileHeader}>
+                        <div className={this.state.mobileHeader}>
                             <h4 className="header-text text-align-center" onClick={this.toggleMenu}>Menu</h4>
                         </div>
                     </div>
