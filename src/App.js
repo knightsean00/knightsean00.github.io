@@ -14,7 +14,7 @@ class App extends React.Component {
 					<Route exact path="/test">
 						<h1>test</h1>
 					</Route>
-					<Route path="/">
+					<Route>
 						<NotFound/>
 					</Route>
 				</Switch>

@@ -46,15 +46,14 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
-.section-text {
-    @extend .hidden-md, .hidden-sm, .hidden-xs;
-    position:fixed;
-    top: 50%;
-    right: 5%;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    letter-spacing: .25rem;
-    transform: translateY(-50%);
+.section-title {
+    cursor: pointer;
+    transition: color .25s ease-in-out;
+}
+
+.section-title:hover{
+    color: $primary-color;
+    transition: color .25s ease-in-out;
 }
 
 .bg-white {
@@ -62,15 +61,34 @@ body {
     color: black;
 }
 
-// .bg-white .section-text {
-//     color: black;
-// }
-
 .bg-black {
     background: black;
     color: white;
 }
 
-// .bg-black .section-text {
-//     color: white;
-// }
+
+@media (max-width: 1400px) {
+    .section-title {
+        position:relative;
+        text-align:center;
+    }
+    .section-text {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1401px) {
+    .section-title {
+        position:fixed;
+        top: 50%;
+        // left: calc(50% + 600px + 1.5rem);
+        left: clamp(calc(50vw + 600px), calc(50vw + 600px + 5vw), calc(50vw + 1200px));
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        letter-spacing: .25rem;
+        transform: translate(-100%, -50%);
+    }
+    .section-text {
+        text-align: center;
+    }
+}
