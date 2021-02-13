@@ -1,0 +1,47 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+@function responsive($minFont, $maxFont) {
+    $slope: (($maxFont - $minFont) / ((map-get($breakpoints, "xl") - map-get($breakpoints, "sm")) / 1px)) / 1rem;
+    $y-inter: -1 * (map-get($breakpoints, "md") / 1px) * $slope + $minFont;
+    $middle: calc(#{$y-inter} + (#{$slope} * 100vw));
+    @return clamp($minFont, $middle, $maxFont);
+}
+
+@for $i from 1 through 6 {
+    $font-size: (7 - $i) / 2.5* $base-size;
+    $spacing: (7 - $i) / 6 ;
+    h#{$i} {
+        letter-spacing: #{$spacing}rem;
+        font-size: $font-size;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        color: inherit;
+    }
+}
+
+p {
+    font-size: $base-size;
+    font-family: 'EB Garamond', sans-serif;
+    font-size: $base-size;
+    color: inherit;
+    line-height: $base-size * 1.75;
+}
+
+a {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: $base-size;
+    color: inherit;
+    transition: color .25s ease-in-out;
+    line-height: $base-size * 1.75;
+}
+
+a:hover {
+    color:$primary-color;
+    transition: color .25s ease-in-out;
+}
+
+.text-align-center {
+    text-align:center;
+}

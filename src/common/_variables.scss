@@ -1,0 +1,15 @@
+// $colors: #61D095, #eb6565, #d68616,#37a2e9, #b56ad3;
+// $primary-color: nth($colors, random(length($colors)));
+$primary-color: #61D095;
+
+// Typography
+$base-size: 1.3rem;
+$scaling: .25;
+
+// Grid
+$grid-columns: 12;
+$gutter: 1.5rem;
+$contained: 80%;
+$breakpoints: ("xs": 0px, "sm": 576px, "md": 768px, "lg": 992px, "xl": 1200px);
+
+$spacer: .75rem;

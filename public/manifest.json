@@ -1,0 +1,29 @@
+{
+  "short_name": "Sean Knight",
+  "name": "Sean Knight",
+  "description": "Sean Knight is an MIT student studying computer science, neuroscience, business management, and comparative media studies",
+  "icons": [
+    {
+      "src": "/imgs/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/imgs/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/imgs/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#61D095",
+  "background_color": "#000000",
+  "categories": [
+    "music"
+  ]
+}

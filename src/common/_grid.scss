@@ -1,0 +1,93 @@
+$size-up: ("xs": "sm", "sm": "md", "md": "lg", "lg": "xl");
+
+@each $size, $break in $breakpoints {
+    @for $i from 1 through $grid-columns {
+        .col-#{$size}-#{$i} {
+            grid-column: span ($i);
+        }
+    }
+    
+    @if(map-get($size-up, $size)) {
+        @media (min-width: $break) and (max-width: map-get($breakpoints, map-get($size-up, $size))) {
+            @for $i from 1 through $grid-columns {
+                .col-#{$size}-#{$i} {
+                    grid-column: span ($i);
+                }
+            }
+            .hidden-#{$size} {
+                display:none !important;
+            }
+        }
+    } @else {
+        @media (min-width: $break) {
+            @for $i from 1 through $grid-columns {
+                .col-#{$size}-#{$i} {
+                    grid-column: span ($i);
+                }
+            }
+            .hidden-#{$size} {
+                display:none !important;
+            }
+        }
+    }
+    
+}
+
+@for $i from 1 through 5 {
+    .mt-#{$i} {
+        margin-top: $spacer * $i;
+    }
+    .mb-#{$i} {
+        margin-bottom: $spacer * $i;
+    }
+    .ml-#{$i} {
+        margin-left: $spacer * $i;
+    }
+    .mr-#{$i} {
+        margin-right: $spacer * $i;
+    }
+    .pt-#{$i} {
+        padding-top: $spacer * $i;
+    }
+    .pb-#{$i} {
+        padding-bottom: $spacer * $i;
+    }
+    .pl-#{$i} {
+        padding-left: $spacer * $i;
+    }
+    .pr-#{$i} {
+        padding-right: $spacer * $i;
+    }
+} 
+
+@media(min-width: map-get($breakpoints, "xl") + 1px) {
+    .container {
+        max-width: 1100px
+    }
+}
+@media(max-width: map-get($breakpoints, "xl")) and (min-width: map-get($breakpoints, "lg") + 1px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media(max-width: map-get($breakpoints, "lg")) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat($grid-columns, 1fr);
+    grid-gap: $gutter;
+}
+
+.d-none {
+    display:none;
+}
+
