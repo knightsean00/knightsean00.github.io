@@ -81,25 +81,45 @@ class Home extends React.Component {
                 <div className="section bg-black pt-5 pb-5" ref={this.projects}>
                     <h2 className="section-title" onClick={this.scrollTo}>Projects</h2>
                     <div className="container">
-                        <div className="card-container pl-1 pr-1">
+                        <div className="card-container">
                             {
-                                projects.map(i => {
-                                    return <Card type="project" data={i} color="black" />
+                                projects.slice(0,3).map(i => {
+                                    return <Card key={i.name} type="project" data={i} color="black" />
                                 })
                             }
                         </div>
+                        {
+                            (projects.length > 3) ? 
+                            <div className="row">
+                                <div className="col-md-12 text-align-center">
+                                    <a href="/projects">View more</a>
+                                </div>
+                            </div>
+                            :
+                            <div></div>
+                        }
                     </div>
                 </div>
                 <div className="section bg-white pt-5 pb-5" ref={this.music}>
                     <h2 className="section-title" onClick={this.scrollTo}>Music</h2>
                     <div className="container">
-                        <div className="card-container pl-1 pr-1">
+                        <div className="card-container">
                             {
-                                music.map(i => {
-                                    return <Card type="music" data={i} color="white" />
+                                music.slice(0,3).map(i => {
+                                    return <Card key={i.name} type="music" data={i} color="white" />
                                 })
                             }
                         </div>
+                        {
+                            (music.length > 3) ? 
+                            <div className="row">
+                                <div className="col-md-12 text-align-center">
+                                    <a href="/music">View more</a>
+                                </div>
+                            </div>
+                            :
+                            <div></div>
+                        }
                     </div>
                 </div>
                 <Footer />

@@ -62,12 +62,18 @@ $size-up: ("xs": "sm", "sm": "md", "md": "lg", "lg": "xl");
 
 @media(min-width: map-get($breakpoints, "xl") + 1px) {
     .container {
-        max-width: 1100px;
+        max-width: 1100px
     }
 }
-@media(max-width: map-get($breakpoints, "xl")) {
+@media(max-width: map-get($breakpoints, "xl")) and (min-width: map-get($breakpoints, "lg") + 1px) {
     .container {
-        max-width: 960px;
+        max-width: 960px
+    }
+}
+
+@media(max-width: map-get($breakpoints, "lg")) {
+    .container {
+        max-width: 100%;
     }
 }
 
