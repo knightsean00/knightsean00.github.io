@@ -1,3 +1,4 @@
+$gradient-speed: 10s;
 .hero {
     min-height: 100vh;
     max-height: 100%;
@@ -9,11 +10,11 @@
     align-items: center;
 
     background: linear-gradient(45deg, #FF8484, #FF9F1C, #2ecc71, #3498db, #9b59b6);
-    background-size: 400% 400%;
+    background-size: 275% 275%;
 
-    -webkit-animation: gradient 20s linear infinite;
-    -moz-animation: gradient 20s linear infinite;
-    animation: gradient 20s linear infinite;
+    -webkit-animation: gradient $gradient-speed linear infinite;
+    -moz-animation: gradient $gradient-speed linear infinite;
+    animation: gradient $gradient-speed linear infinite;
     animation-direction: alternate;
 }
 

@@ -17,7 +17,7 @@ class Header extends React.Component {
     }
 
     toggleMenu(event) {
-        if (!event.target.parentElement.classList.contains("fade")) {
+        if (!event.target.parentElement.classList.contains("fade") || event.target.parentElement.classList.contains("mobile-menu")) {
             this.setState({menuOpen: !this.state.menuOpen,
                 desktopHeader: "header-links hidden-xs hidden-sm hidden-md",
                 mobileHeader: "mobile-header hidden-lg hidden-xl"
