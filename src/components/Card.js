@@ -1,6 +1,8 @@
 import React from "react";
 import "../common/main.scss";
 import "./cards.scss";
+import SvgMusescore from '../common/svgs/SvgMusescore';
+import SvgDownload from '../common/svgs/SvgDownload';
 
 const colorMap = {
     "black": "bg-white",
@@ -49,7 +51,7 @@ class Card extends React.Component {
             return (
                 <div className={this.state.cardClass} ref={this.view}>
                     <div className="">
-                        <a href={this.props.data.url}><img src={this.props.data.photo} /></a>
+                        <a href={this.props.data.url} target="_blank" rel="noopener noreferrer"><img src={this.props.data.photo} /></a>
                     </div>
                     <div className="card-description pl-1 pr-1 pb-3">
                         <a className="text-align-center" href={this.props.data.url}><h4>{this.props.data.name}</h4></a>
@@ -57,12 +59,12 @@ class Card extends React.Component {
                         <div className="music-icons">
                             {
                                 (this.props.data.links.musescore != null) ?
-                                <a href={this.props.data.links.musescore}>Musescore</a> :
+                                <a href={this.props.data.links.musescore} target="_blank" rel="noopener noreferrer"><i>Musescore</i></a> :
                                 <div></div>
                             }
                             {
                                 (this.props.data.links.download != null) ?
-                                <a href={this.props.data.links.download}>Download</a> :
+                                <a href={this.props.data.links.download} target="_blank" rel="noopener noreferrer"><i>Download</i></a> :
                                 <div></div>
                             }
                         </div>
@@ -74,12 +76,12 @@ class Card extends React.Component {
                 return (
                     <div className={this.state.cardClass} ref={this.view}>
                         <div className="">
-                            <a href={this.props.data.url}><img src={this.props.data.photo} /></a>
+                            <a href={this.props.data.url} target="_blank" rel="noopener noreferrer"><img src={this.props.data.photo} /></a>
                         </div>
                         <div className="card-description pl-1 pr-1">
                             <a className="text-align-center" href={this.props.data.url}><h4>{this.props.data.name}</h4></a>
                             <p>{this.props.data.description}</p>
-                            <p className="text-align-center">{this.props.data.tech}</p>
+                            <p className="text-align-center"><i>{this.props.data.tech}</i></p>
                         </div>
                     </div>
                 )
@@ -89,7 +91,7 @@ class Card extends React.Component {
                         <div className="card-description pl-1 pr-1">
                             <a className="text-align-center" href={this.props.data.url}><h4>{this.props.data.name}</h4></a>
                             <p>{this.props.data.description}</p>
-                            <p className="text-align-center">{this.props.data.tech}</p>
+                            <p className="text-align-center"><i>{this.props.data.tech}</i></p>
                         </div>
                     </div>
                 )

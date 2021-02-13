@@ -68,11 +68,11 @@ class Home extends React.Component {
                             <p>Hi! My name is Sean. I am currently a second-year at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
                             computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to learn more about the intersection 
                             between the two fields, as well as how each of the fields can inform the other.</p>
-                            <p>This past IAP, I spent a majority of my time at BusySquirrels developing the <a href={extensionLink}>company's browser extension</a>. 
+                            <p>This past IAP, I spent a majority of my time at BusySquirrels developing the <a href={extensionLink} target="_blank" rel="noopener noreferrer">company's browser extension</a>. 
                             The extension was built with React, Webpack, Browser Extension Polyfill, GraphQL, and a myriad of AWS resources. I also worked on
-                            authentication flows and product sorting for the <a href="https://busysquirrels.com/">company website</a>.</p>
+                            authentication flows and product sorting for the <a href="https://busysquirrels.com/" target="_blank" rel="noopener noreferrer">company website</a>.</p>
                             <p>At MIT, I serve as a committee member for the Student Events Board (formerly UA Events) and a member of 
-                                logistics and marketing team for <a href="https://hackmit.org/">HackMIT</a>.</p>
+                                logistics and marketing team for <a href="https://hackmit.org/" target="_blank" rel="noopener noreferrer">HackMIT</a>.</p>
                             <p>Aside from my primary field of study, I am also seeking a minor in Business Management and Comparative Media Studies. 
                                 In my spare time I can usually be found playing video games or practicing cello/piano. </p>
                         </div>
@@ -80,7 +80,7 @@ class Home extends React.Component {
                 </div>
                 <div className="section bg-black pt-5 pb-5" ref={this.projects}>
                     <h2 className="section-title" onClick={this.scrollTo}>Projects</h2>
-                    <div className="container">
+                    <div className="container pt-5 pb-5">
                         <div className="card-container">
                             {
                                 projects.slice(0,3).map(i => {
@@ -102,7 +102,7 @@ class Home extends React.Component {
                 </div>
                 <div className="section bg-white pt-5 pb-5" ref={this.music}>
                     <h2 className="section-title" onClick={this.scrollTo}>Music</h2>
-                    <div className="container">
+                    <div className="container pt-5 pb-5">
                         <div className="card-container">
                             {
                                 music.slice(0,3).map(i => {

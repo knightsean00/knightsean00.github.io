@@ -24,6 +24,8 @@ $gradient-speed: 10s;
     font-size: clamp(2.5rem, 7vw, 7rem);
     color: white;
     text-align: center;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .hero-text-scroll {

@@ -7,7 +7,7 @@ const projects = [
         same friend that worked on sunsets_locale. As someone who has spent a significant portion of time working
         on and playing this game, it's honestly a lot of fun to play, especially if you have a lot of friends to
         play with.`,
-        "photo": null,
+        "photo": process.env.PUBLIC_URL + "/imgs/melodiq.png",
         "tech": "Bootstrap, ExpressJS, FeathersJS, NodeJS, socket.io, Spotify API, ReactJS"
     },
     {
@@ -28,7 +28,7 @@ const projects = [
         My friends and I spent a lot of time working on explanation and practice problems, so we were more than elated
         when we found out that it was never used in the subsequent calculus classes. Hopefully you might be able to use it 
         to brush off those long-forgotten calculus skills.`,
-        "photo": null,
+        "photo": process.env.PUBLIC_URL + "/imgs/calculus.png",
         "tech": "AsciiMath, Materialize"
     }
 ]

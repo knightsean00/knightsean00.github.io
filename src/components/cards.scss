@@ -24,9 +24,8 @@ $card-fade: 1s;
 
 .music-icons {
     display:flex;
-    max-width: 100%;
-    width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 @media (min-width: map-get($breakpoints, "md")) {
