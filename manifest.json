@@ -1,6 +1,7 @@
 {
   "short_name": "Sean Knight",
-  "name": "Create React App Sample",
+  "name": "Sean Knight",
+  "description": "Sean Knight is an MIT student studying computer science, neuroscience, business management, and comparative media studies",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,9 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#61D095",
+  "background_color": "#000000",
+  "categories": [
+    "music"
+  ]
 }
