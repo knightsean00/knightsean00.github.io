@@ -12,7 +12,7 @@ class App extends React.Component {
 						<Home/>
 					</Route>
 					<Route exact path="/test">
-						<h1>test</h1>
+						<h1>You found the test route</h1>
 					</Route>
 					<Route>
 						<NotFound/>
