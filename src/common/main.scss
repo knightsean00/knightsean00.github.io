@@ -11,6 +11,7 @@ body {
     background-color: black;
     scrollbar-color: rgb(163, 163, 163);
     scrollbar-width: 10px;
+    color: white;
 }
 
 ::-webkit-scrollbar {
@@ -101,4 +102,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items:center;
+}
+
+.no-underline {
+    text-decoration: none;
 }

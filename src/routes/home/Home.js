@@ -7,8 +7,6 @@ import Card from "../../components/Card";
 import music from '../../common/music';
 import projects from '../../common/projects';
 
-const extensionLink = "https://chrome.google.com/webstore/detail/busysquirrels/bcnejdoncdomkjldoifhampobhdedhki?hl=en-US"
-
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -65,13 +63,12 @@ class Home extends React.Component {
                     <div className="container pt-5 pb-5">
                         <h2 className="section-title" onClick={this.scrollTo}>About</h2>
                         <div className="section-text pl-1 pr-1">
-                            <p>Hi! My name is Sean. I am currently a second-year at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
+                            <p>Hi! My name is Sean. I am currently a junior at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
                             computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to learn more about the intersection 
                             between the two fields, as well as how each of the fields can inform the other.</p>
-                            <p>This past IAP, I spent a majority of my time at BusySquirrels developing the <a href={extensionLink} target="_blank" rel="noopener noreferrer">company's browser extension</a>. 
-                            The extension was built with React, Webpack, Browser Extension Polyfill, GraphQL, and a myriad of AWS resources. I also worked on
-                            authentication flows and product sorting for the <a href="https://busysquirrels.com/" target="_blank" rel="noopener noreferrer">company website</a>.</p>
-                            <p>At MIT, I serve as a committee member for the Student Events Board (formerly UA Events) and a member of 
+                            <p>This past summer, I spent my time at Red Hat working on the Ansible Automation Analytics teams. On this team, I worked on a myriad of
+                                features the helped users more effectively utilize server resources when running jobs.</p>
+                            <p>At MIT, I serve as a vice president for the Student Events Board (formerly UA Events) and was a previous member of 
                                 logistics and marketing team for <a href="https://hackmit.org/" target="_blank" rel="noopener noreferrer">HackMIT</a>.</p>
                             <p>Aside from my primary field of study, I am also seeking a minor in Business Management and Comparative Media Studies. 
                                 In my spare time I can usually be found playing video games or practicing cello/piano. </p>
@@ -92,7 +89,7 @@ class Home extends React.Component {
                             (projects.length > 3) ? 
                             <div className="row">
                                 <div className="col-md-12 text-align-center">
-                                    <a href="/projects">View more</a>
+                                    <a className="no-underline" href="/projects"><h4>View more</h4></a>
                                 </div>
                             </div>
                             :
@@ -114,7 +111,7 @@ class Home extends React.Component {
                             (music.length > 3) ? 
                             <div className="row">
                                 <div className="col-md-12 text-align-center">
-                                    <a href="/music">View more</a>
+                                    <a className="no-underline" href="/music"><h4>View more</h4></a>
                                 </div>
                             </div>
                             :

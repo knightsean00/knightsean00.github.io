@@ -4,10 +4,9 @@ const music = [
         "album": "Florence",
         "year": 2020,
         "url": "https://store.steampowered.com/app/1206330/Florence__Original_Soundtrack/",
-        "description": `The opening song for to a great game (that I have never played) and an even better album. 
-        Kevin Penkin is an amazing composer and has made many other great soundtracks for shows such as Made in Abyss and 
-        The Rising of the Shield Hero. The album contains some amazing cello melodies, so I'll eventually 
-        transcribe the rest of this album and composing a sort of medley.`,
+        "description": `The opening song to a great game and a similarly amazing album. As someone who plays 
+        both the cello and piano, this entire album is just a goldmine for me. Someday I hope to transcribe the 
+        entire album and create a "Florence Suite".`,
         "photo": process.env.PUBLIC_URL + "/imgs/florence.jpg",
         "links": {
             "musescore": "https://musescore.com/user/35722062/scores/6304812",
@@ -21,9 +20,7 @@ const music = [
         "url": "https://music.apple.com/us/album/octopath-traveler-original-soundtrack/1406665639",
         "description": `Probably the most covered song from the Octopath Traveler soundtrack. It's a very simple melody 
         that's just very relaxing to listen to. I highly recommend listening to the album in its entirety because despite the 
-        large number of melodies Yasunori Nishiki had to create, they all had a distinct sound. The fact that I have never 
-        played the game, yet can still imagine what is going on in the moment of the songs speaks volumes about his creativity 
-        as a composer.`,
+        large number of melodies Yasunori Nishiki had to create, they all have a distinct, yet cohesive sound.`,
         "photo": process.env.PUBLIC_URL + "/imgs/octopath.jpg",
         "links": {
             "musescore": "https://musescore.com/user/35722062/scores/6300541",

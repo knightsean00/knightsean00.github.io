@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import "../common/main.scss";
 import "./cards.scss";
 import SvgMusescore from '../common/svgs/SvgMusescore';
@@ -22,7 +23,6 @@ class Card extends React.Component {
             };
         }
 
-        // console.log(this.props);
         this.isVisible = this.isVisible.bind(this);
 
         this.view = React.createRef();
@@ -101,6 +101,12 @@ class Card extends React.Component {
             <div ref={this.view}></div>
         )
 	}
+}
+
+Card.propTypes = {
+    data: PropTypes.object.isRequired,
+    type: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
 }
 
 export default Card;
