@@ -63,15 +63,14 @@ class Home extends React.Component {
                     <div className="container pt-5 pb-5">
                         <h2 className="section-title" onClick={this.scrollTo}>About</h2>
                         <div className="section-text pl-1 pr-1">
-                            <p>Hi! My name is Sean. I am currently a junior at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
+                            <p>Hi! My name is Sean. I am currently a senior at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
                             computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to learn more about the intersection 
                             between the two fields, as well as how each of the fields can inform the other.</p>
-                            <p>This past summer, I spent my time at Red Hat working on the Ansible Automation Analytics teams. On this team, I worked on a myriad of
-                                features the helped users more effectively utilize server resources when running jobs.</p>
-                            <p>At MIT, I serve as a vice president for the Student Events Board (formerly UA Events) and was a previous member of 
-                                logistics and marketing team for <a href="https://hackmit.org/" target="_blank" rel="noopener noreferrer">HackMIT</a>.</p>
+                            <p>This past summer, I spent my time at Jump Trading.</p>
+                            <p>At MIT, I serve as a co-president for <a href="https://seb.mit.edu/" target="_blank" rel="noopener noreferrer">MIT's Student Events Board</a> 
+                            and was a previous member of logistics and marketing team for <a href="https://hackmit.org/" target="_blank" rel="noopener noreferrer">HackMIT</a>.</p>
                             <p>Aside from my primary field of study, I am also seeking a minor in Business Management and Comparative Media Studies. 
-                                In my spare time I can usually be found playing video games or practicing cello/piano. </p>
+                            In my spare time I can usually be found cooking, playing video games, or practicing cello/piano. </p>
                         </div>
                     </div>
                 </div>
