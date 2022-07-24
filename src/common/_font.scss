@@ -10,8 +10,8 @@ body {
 }
 
 @for $i from 1 through 6 {
-    $font-size: (7 - $i) / 2.5* $base-size;
-    $spacing: (7 - $i) / 6 ;
+    $font-size: calc((7 - $i) / 2.5* $base-size);
+    $spacing: calc((7 - $i) / 6 );
     h#{$i} {
         letter-spacing: #{$spacing}rem;
         font-size: $font-size;
