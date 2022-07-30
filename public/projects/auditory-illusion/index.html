@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by TEMPLATED
+http://templated.co
+Released for free under the Creative Commons Attribution License
+
+Name       : Retention
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20140221
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>9.35 Illusion Lab</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link href="http://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet" />
+        <link href="../../default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="main.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="../../fonts.css" rel="stylesheet" type="text/css" media="all" />
+        <!--[if IE 6]>
+        <link href="default_ie6.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    </head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+		<div id="header" class="container">
+			<div id="logo">
+				<h1><a href="/">9.35 Illusion Laboratory</a></h1>
+				<p>Spring 2021 Auditory Lab</p>
+			</div>
+			<div id="banner"> <a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a> </div>
+		</div>
+	</div>
+	<div id="menu-wrapper">
+		<div id="menu" class="container">
+			<ul>
+				<li><a href="/">Home - Return to main website</a></li>
+			</ul>
+		</div>
+		<!-- end #menu -->
+	</div>
+	<div id="page" class="container">
+		<div>
+			<div class="title">
+				<h2>The Effect of Stochastic Frequency Modulation on Filling-in Illusions</h2>
+				<span class="byline">Sean Knight</span> </div>
+                
+                <h3>If there is no inherent order to a played tone, can there still be continuity through a noise burst?</h3>
+
+				<p>
+                    The following illusions aim to address whether tone continuity would exist during random frequency modulation. 
+                    In many continuity illusions, the brain utilizes a system of inference similar to that described in Bayes rule 
+                    in order to maintain tone continuity through an interrupting noise burst. 
+                </p>
+                <p>
+                    In the following demonstrations, you will hear a frequency modulated tone that starts at 1000Hz and changes 
+                    randomly by +/- the designated shift frequency every .0226ms (1 / fs). The tone will continue for .5s and 
+                    then either a noise burst or a silence will follow (.25s). Finally, the tone will continue.
+                </p>
+                <p>
+                    The first section of illusions contains tones that have an equal chance to move either up or down. The 
+                    second section contains tones that are slightly biased to moving up. Finally, the last section contains 
+                    tones that are biased to moving down. 
+                </p>
+                <p>
+                    By having tones with different biases for frequency movement, an overarching order (such as up or down) 
+                    might be superimposed and utilized to provide continuity, making it easier to perceive a tone through a noise burst.
+                </p>
+
+				<p><strong>VOLUME WARNING: White noise can be loud!</strong></p>
+
+                <br>
+                
+                <h3>Random frequency modulation with no upwards or downwards bias (click to play)</h3>
+                <p>
+                    Tones start at a base frequency of 1000Hz and will have an equal chance of moving either up or down.
+                </p>
+                <div class="two-noise">
+                    <audio volume="1.0" id="n1">
+                        <source src="random-neutral/random_tone-n-0_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-0_shift_no_noise.png" onClick="document.getElementById('n1').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n2">
+                        <source src="random-neutral/random_tone-n-0_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-0_shift.png" onClick="document.getElementById('n2').play(); return false;" style="cursor: pointer;"/>
+                    
+
+                    <audio volume="1.0" id="n3">
+                        <source src="random-neutral/random_tone-n-10_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-10_shift_no_noise.png" onClick="document.getElementById('n3').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n4">
+                        <source src="random-neutral/random_tone-n-10_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-10_shift.png" onClick="document.getElementById('n4').play(); return false;" style="cursor: pointer;"/>
+                    
+
+                    <audio volume="1.0" id="n5">
+                        <source src="random-neutral/random_tone-n-25_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-25_shift_no_noise.png" onClick="document.getElementById('n5').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n6">
+                        <source src="random-neutral/random_tone-n-25_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-25_shift.png" onClick="document.getElementById('n6').play(); return false;" style="cursor: pointer;"/>
+                    
+
+                    <audio volume="1.0" id="n7">
+                        <source src="random-neutral/random_tone-n-50_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-50_shift_no_noise.png" onClick="document.getElementById('n7').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n8">
+                        <source src="random-neutral/random_tone-n-50_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-50_shift.png" onClick="document.getElementById('n8').play(); return false;" style="cursor: pointer;"/>
+                    
+
+                    <audio volume="1.0" id="n9">
+                        <source src="random-neutral/random_tone-n-100_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-100_shift_no_noise.png" onClick="document.getElementById('n9').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n10">
+                        <source src="random-neutral/random_tone-n-100_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-100_shift.png" onClick="document.getElementById('n10').play(); return false;" style="cursor: pointer;"/>
+                    
+
+                    <audio volume="1.0" id="n11">
+                        <source src="random-neutral/random_tone-n-200_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-200_shift_no_noise.png" onClick="document.getElementById('n11').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n12">
+                        <source src="random-neutral/random_tone-n-200_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-200_shift.png" onClick="document.getElementById('n12').play(); return false;" style="cursor: pointer;"/>
+                    
+
+                    <audio volume="1.0" id="n13">
+                        <source src="random-neutral/random_tone-n-400_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-400_shift_no_noise.png" onClick="document.getElementById('n13').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n14">
+                        <source src="random-neutral/random_tone-n-400_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-400_shift.png" onClick="document.getElementById('n14').play(); return false;" style="cursor: pointer;"/>
+                    
+
+                    <audio volume="1.0" id="n15">
+                        <source src="random-neutral/random_tone-n-1600_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-1600_shift_no_noise.png" onClick="document.getElementById('n15').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n16">
+                        <source src="random-neutral/random_tone-n-1600_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-1600_shift.png" onClick="document.getElementById('n16').play(); return false;" style="cursor: pointer;"/>
+                    
+
+                    <audio volume="1.0" id="n17">
+                        <source src="random-neutral/random_tone-n-3200_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-3200_shift_no_noise.png" onClick="document.getElementById('n17').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="n18">
+                        <source src="random-neutral/random_tone-n-3200_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-neutral/random_tone-n-3200_shift.png" onClick="document.getElementById('n18').play(); return false;" style="cursor: pointer;"/>
+                </div>
+                
+                
+                
+                
+                <br><br><br><br><br><br><br><br><br>
+                <h3>Random frequency modulation with upwards bias (click to play)</h3>
+                <p>
+                    Tones start at a base frequency of 1000Hz and will move upwards with probability .505.
+                </p>
+                <div class="two-noise">
+                    <audio volume="1.0" id="u1">
+                        <source src="random-up/random_tone-u-10_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-10_shift_no_noise.png" onClick="document.getElementById('u1').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="u2">
+                        <source src="random-up/random_tone-u-10_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-10_shift.png" onClick="document.getElementById('u2').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="u3">
+                        <source src="random-up/random_tone-u-25_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-25_shift_no_noise.png" onClick="document.getElementById('u3').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="u4">
+                        <source src="random-up/random_tone-u-25_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-25_shift.png" onClick="document.getElementById('u4').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="u5">
+                        <source src="random-up/random_tone-u-50_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-50_shift_no_noise.png" onClick="document.getElementById('u5').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="u6">
+                        <source src="random-up/random_tone-u-50_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-50_shift.png" onClick="document.getElementById('u6').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="u7">
+                        <source src="random-up/random_tone-u-100_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-100_shift_no_noise.png" onClick="document.getElementById('u7').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="u8">
+                        <source src="random-up/random_tone-u-100_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-100_shift.png" onClick="document.getElementById('u8').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="u9">
+                        <source src="random-up/random_tone-u-200_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-200_shift_no_noise.png" onClick="document.getElementById('u9').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="u10">
+                        <source src="random-up/random_tone-u-200_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-200_shift.png" onClick="document.getElementById('u10').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="u11">
+                        <source src="random-up/random_tone-u-400_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-400_shift_no_noise.png" onClick="document.getElementById('u11').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="u12">
+                        <source src="random-up/random_tone-u-400_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-400_shift.png" onClick="document.getElementById('u12').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="u13">
+                        <source src="random-up/random_tone-u-1600_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-1600_shift_no_noise.png" onClick="document.getElementById('u13').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="u14">
+                        <source src="random-up/random_tone-u-1600_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-up/random_tone-u-1600_shift.png" onClick="document.getElementById('u14').play(); return false;" style="cursor: pointer;"/>
+                </div>
+
+
+
+                <br><br><br><br><br><br><br><br><br>
+                <h3>Random frequency modulation with downwards bias (click to play)</h3>
+                <p>
+                    Tones start at a base frequency of 1000Hz and will move upwards with probability .495.
+                </p>
+                <div class="two-noise">
+                    <audio volume="1.0" id="d1">
+                        <source src="random-down/random_tone-d-10_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-10_shift_no_noise.png" onClick="document.getElementById('d1').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="d2">
+                        <source src="random-down/random_tone-d-10_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-10_shift.png" onClick="document.getElementById('d2').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="d3">
+                        <source src="random-down/random_tone-d-25_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-25_shift_no_noise.png" onClick="document.getElementById('d3').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="d4">
+                        <source src="random-down/random_tone-d-25_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-25_shift.png" onClick="document.getElementById('d4').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="d5">
+                        <source src="random-down/random_tone-d-50_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-50_shift_no_noise.png" onClick="document.getElementById('d5').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="d6">
+                        <source src="random-down/random_tone-d-50_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-50_shift.png" onClick="document.getElementById('d6').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="d7">
+                        <source src="random-down/random_tone-d-100_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-100_shift_no_noise.png" onClick="document.getElementById('d7').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="d8">
+                        <source src="random-down/random_tone-d-100_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-100_shift.png" onClick="document.getElementById('d8').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="d9">
+                        <source src="random-down/random_tone-d-200_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-200_shift_no_noise.png" onClick="document.getElementById('d9').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="d10">
+                        <source src="random-down/random_tone-d-200_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-200_shift.png" onClick="document.getElementById('d10').play(); return false;" style="cursor: pointer;"/>
+
+
+                    <audio volume="1.0" id="d11">
+                        <source src="random-down/random_tone-d-400_shift_no_noise.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-400_shift_no_noise.png" onClick="document.getElementById('d11').play(); return false;" style="cursor: pointer;"/>
+
+                    <audio volume="1.0" id="d12">
+                        <source src="random-down/random_tone-d-400_shift.wav" type="audio/wav"/>
+                    </audio>
+                    <img class="noise" src="random-down/random_tone-d-400_shift.png" onClick="document.getElementById('d12').play(); return false;" style="cursor: pointer;"/>
+                </div>
+
+				<p>McWalter, R., McDermott, J.H. Illusory sound texture reveals multi-second statistical completion in auditory scene analysis. <i>Nat Commun</i> 10, 5096 (2019).<p>
+                <p>Warren, Richard M., Charles J. Obusek, and John M. Ackroff. "Auditory induction: perceptual synthesis of absent sounds." <i>Science</i> 176.4039 (1972): 1149-1151.</p>
+
+
+                <p>
+                    If you are interested in seeing other types of frequency modulations 
+                    I tried you can view them <a href="https://drive.google.com/drive/folders/1Dv3CeRYbwHfOliVTG8EMyKrCLIHp5SNO?usp=sharing">here</a>.
+                    This Google Drive contains exponential modulations, sigmoidal modulations, and linear modulation (with after noise frequency offsets).
+                </p>
+
+                <p>
+                    If you are interested in viewing the code used for the generation of these illusions, you can find it <a href="illusion.mlx" download>here</a>.
+                </p>
+
+		</div>
+		<!-- begin wwww.htmlcommentbox.com -->
+            <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML </a> is loading comments...</div>
+            <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+            <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10&ts=1616100190864");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+		<!-- end www.htmlcommentbox.com -->
+	</div>
+</div>
+<div id="copyright" class="container">
+	<p> CC BY-NC. | Design by <a href="http://templated.co" rel="nofollow">TEMPLATED</a>.</p>
+</div>
+</body>
+</html>

@@ -1,11 +1,36 @@
 const projects = [
     {
+        "name": "Nutrition Hero",
+        "year": 2022,
+        "url": "https://github.com/knightsean00/hippo",
+        "description": `As a final project for CMS.590 (Game for Learning) we were required to create a video game that taught
+        a concept of our choosing. Our group chose to try and teach about the complexities of nutrition and a balanced diet.
+        Oftentimes, in school, nutrition is taught as a very simplistic binary (good vs. bad food), but in reality, nutrition
+        is far more complex. As a rough demo of our game, we wanted to demonstrate the difficulties of balancing different macronutrients
+        and the happiness of the ficticious protagnoist. This game was made during a all-nighter in the basement of 
+        Maseeh and, as one of my first video games, was extremely fun and informative to make. `,
+        "photo": process.env.PUBLIC_URL + "/imgs/nutrition-hero.png",
+        "tech": "Godot, Python"
+    },
+    {
+        "name": "sunsets_locale",
+        "year": 2022,
+        "url": "https://github.com/knightsean00/sunsets_locale",
+        "description": `Originally, sunsets_locale was a Discord bot that was created by me and my friend over the summer of 2020. 
+        However, after a few updates to the foundational npm packages, the bot was rendered useless and was ultimately discarded.
+        We recently completed an additional extensive overhaul of the bot (making this v3) to make the code far more modularizable and readable, as well as adding Soundcloud,
+        multi-server, and audio clipping (still working on this feature) functionality. This bot is highly customizable, so feel free to reuse
+        this bot for your own server!`,
+        "photo": process.env.PUBLIC_URL + "/imgs/sunsets.png",
+        "tech": "TypeScript, Discord.js, YouTube API, Soundcloud API, Scipy, Numpy"
+    },
+    {
         "name": "Motion Object Illusion",
         "year": 2021,
-        "url": "http://web.mit.edu/9.35/www/2021/vision/gallery/knight/index2.html",
+        "url": process.env.PUBLIC_URL + "/projects/visual-illusion/index.html",
         "description": `This was another illusion that I developed for the class 9.35: Perception. The ultimate goal of this illusion
         was to better understand what mode of concealment had the most perceivable effect on object recognition ability. The brain
-        has the incredibly ability to construct an object, even when important details may be separated in time and space. Although 
+        has the incredibly ability to reconstruct and perceive an object, even when important details may be separated in time and space. Although 
         this seems like a trivial task, I think it well represents the extraordinary processing abilities of our brains.`,
         "photo": process.env.PUBLIC_URL + "/imgs/obscure.png",
         "tech": "ReactJS"
@@ -13,25 +38,13 @@ const projects = [
     {
         "name": "Stochastic Frequency Modulation Illusion",
         "year": 2021,
-        "url": "http://web.mit.edu/9.35/www/2021/auditory/gallery/sean_knight_illusion/index.html",
+        "url": process.env.PUBLIC_URL + "/projects/auditory-illusion/index.html",
         "description": `In our daily lives, our brain performs the incredible feat of filling in lost information. However, this 
         ability of the brain is best put on display when tones are interrupted by loud, yet brief noise bursts. During the noise burst,
         the tone actually stops, but the brain will perceive continuity through the interruption. In this illusion
         I sought to understand the limits to which this "filling-in" effect would continue.`,
         "photo": process.env.PUBLIC_URL + "/imgs/filled.png",
         "tech": "MATLAB"
-    },
-    {
-        "name": "sunsets_locale",
-        "year": 2021,
-        "url": "https://github.com/knightsean00/new_sun",
-        "description": `Originally, sunsets_locale was a Discord bot that was created by me and my friend over the summer of 2020. 
-        However, after a few updates to the foundational npm packages, the bot was rendered useless and was ultimately discarded.
-        I recently completed an extensive overhaul of the bot to make the code far more modularizable and readable, as well as adding Soundcloud,
-        multi-server, and audio clipping (still working on this feature) functionality. This bot is highly customizable, so feel free to reuse
-        this bot for your own server!`,
-        "photo": process.env.PUBLIC_URL + "/imgs/sunsets.png",
-        "tech": "Discord.js, NodeJS, YouTube API, Soundcloud API, Scipy, Numpy"
     },
     {
         "name": "Melodiq",

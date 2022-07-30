@@ -1,0 +1,11 @@
+.two-noise {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1%;
+}
+
+.noise {
+    margin-bottom: 5rem;
+    max-width: 49%;
+}

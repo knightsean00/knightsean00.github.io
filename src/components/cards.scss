@@ -37,7 +37,7 @@ $card-fade: 1s;
 
 .card:hover {
     opacity:1;
-    transition: opacity ($card-fade / 2) ease-in-out;
+    transition: opacity calc($card-fade / 2) ease-in-out;
 }
 
 .visible {

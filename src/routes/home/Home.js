@@ -7,6 +7,8 @@ import Card from "../../components/Card";
 import music from '../../common/music';
 import projects from '../../common/projects';
 
+const maxCards = 4;
+
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -66,9 +68,9 @@ class Home extends React.Component {
                             <p>Hi! My name is Sean. I am currently a senior at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
                             computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to learn more about the intersection 
                             between the two fields, as well as how each of the fields can inform the other.</p>
-                            <p>This past summer, I spent my time at Jump Trading.</p>
-                            <p>At MIT, I serve as a co-president for <a href="https://seb.mit.edu/" target="_blank" rel="noopener noreferrer">MIT's Student Events Board</a> 
-                            and was a previous member of logistics and marketing team for <a href="https://hackmit.org/" target="_blank" rel="noopener noreferrer">HackMIT</a>.</p>
+                            <p>This past summer, I spent my time at Jump Trading developing tools to improve the JPEX trading applications and platforms.</p>
+                            <p>At MIT, I serve as a co-president for <a href="https://seb.mit.edu/" target="_blank" rel="noopener noreferrer">MIT's Student Events Board</a> and 
+                            was a previous member of the logistics and marketing team for <a href="https://hackmit.org/" target="_blank" rel="noopener noreferrer">HackMIT</a>.</p>
                             <p>Aside from my primary field of study, I am also seeking a minor in Business Management and Comparative Media Studies. 
                             In my spare time I can usually be found cooking, playing video games, or practicing cello/piano. </p>
                         </div>
@@ -79,7 +81,7 @@ class Home extends React.Component {
                     <div className="container pt-5 pb-5">
                         <div className="card-container">
                             {
-                                projects.slice(0,3).map(i => {
+                                projects.slice(0,maxCards).map(i => {
                                     return <Card key={i.name} type="project" data={i} color="black" />
                                 })
                             }
@@ -101,7 +103,7 @@ class Home extends React.Component {
                     <div className="container pt-5 pb-5">
                         <div className="card-container">
                             {
-                                music.slice(0,3).map(i => {
+                                music.slice(0,maxCards).map(i => {
                                     return <Card key={i.name} type="music" data={i} color="white" />
                                 })
                             }
