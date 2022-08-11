@@ -68,7 +68,7 @@ class Home extends React.Component {
                             <p>Hi! My name is Sean. I am currently a senior at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
                             computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to learn more about the intersection 
                             between the two fields, as well as how each of the fields can inform the other.</p>
-                            <p>This past summer, I spent my time at Jump Trading developing tools to improve the JPEX trading applications and platforms.</p>
+                            <p>This past summer, I spent my time at Jump Trading improving trading applications and various platforms.</p>
                             <p>At MIT, I serve as a co-president for <a href="https://seb.mit.edu/" target="_blank" rel="noopener noreferrer">MIT's Student Events Board</a> and 
                             was a previous member of the logistics and marketing team for <a href="https://hackmit.org/" target="_blank" rel="noopener noreferrer">HackMIT</a>.</p>
                             <p>Aside from my primary field of study, I am also seeking a minor in Business Management and Comparative Media Studies. 
