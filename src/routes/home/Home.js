@@ -65,14 +65,17 @@ class Home extends React.Component {
                     <div className="container pt-5 pb-5">
                         <h2 className="section-title" onClick={this.scrollTo}>About</h2>
                         <div className="section-text pl-1 pr-1">
-                            <p>Hi! My name is Sean. I am currently a senior at MIT studying Computation and Cognition (Course 6-9). Although I have been interested in 
-                            computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to learn more about the intersection 
-                            between the two fields, as well as how each of the fields can inform the other.</p>
-                            <p>This past summer, I spent my time at Jump Trading improving trading applications and various platforms.</p>
-                            <p>At MIT, I serve as a co-president for <a href="https://seb.mit.edu/" target="_blank" rel="noopener noreferrer">MIT's Student Events Board</a> and 
-                            was a previous member of the logistics and marketing team for <a href="https://hackmit.org/" target="_blank" rel="noopener noreferrer">HackMIT</a>.</p>
-                            <p>Aside from my primary field of study, I am also seeking a minor in Business Management and Comparative Media Studies. 
-                            In my spare time I can usually be found cooking, playing video games, or practicing cello/piano. </p>
+                            <p>
+                                Hi! My name is Sean. I'm a recent graduate of MIT with a BS in Computation and Cognition (Course 6-9) and two 
+                                minors in Comparative Media Studies and Business Management. Although I have been interested in 
+                                computer science for as long as I can remember, studying neuroscience is fairly new to me. I am excited to 
+                                learn more about the intersection between the two fields, as well as how each of the fields can inform the other.
+                            </p>
+                            <p>I am currently slated to start as a full-time software engineer at Jump Trading.</p>
+                            <p>
+                                In my spare time I can usually be found cooking, playing video games, or practicing cello/piano. I'm currently 
+                                very intersted in learning jazz piano and ceramic-making!
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -87,7 +90,7 @@ class Home extends React.Component {
                             }
                         </div>
                         {
-                            (projects.length > 3) ? 
+                            (projects.length > maxCards) ? 
                             <div className="row">
                                 <div className="col-md-12 text-align-center">
                                     <a className="no-underline" href="/projects"><h4>View more</h4></a>
@@ -109,7 +112,7 @@ class Home extends React.Component {
                             }
                         </div>
                         {
-                            (music.length > 3) ? 
+                            (music.length > maxCards) ? 
                             <div className="row">
                                 <div className="col-md-12 text-align-center">
                                     <a className="no-underline" href="/music"><h4>View more</h4></a>

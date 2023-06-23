@@ -19,7 +19,7 @@ class Header extends React.Component {
                             <div><a href="https://github.com/knightsean00/" target="_blank" rel="noopener noreferrer"><SvgGit/></a></div>
                             <div><a href="https://www.linkedin.com/in/knightsean00/" target="_blank" rel="noopener noreferrer"><SvgLinkedin/></a></div>
                             <div><a href="https://musescore.com/user/35722062" target="_blank" rel="noopener noreferrer"><SvgMusescore/></a></div>
-                            <div><a href="mailto:seknight@mit.edu"><SvgMail/></a></div>
+                            <div><a href="mailto:knightsean00@gmail.com"><SvgMail/></a></div>
                         </div>
                     </div>
                     <div className="footer-row">

@@ -11,7 +11,7 @@ class App extends React.Component {
 				<Routes>
 					<Route exact path="/" element={<Home />} />
 					<Route exact path="/projects" element={<CardDisplay type="project" />} />
-					{/* <Route exact path="/music" element={<CardDisplay type="music" />} /> */}
+					<Route exact path="/music" element={<CardDisplay type="music" />} />
 					<Route element={<NotFound />} />
 				</Routes>
 			</Router>

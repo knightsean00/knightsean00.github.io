@@ -1,5 +1,35 @@
 const projects = [
     {
+        "name": "Redimark",
+        "year": 2023,
+        "url": "https://github.com/knightsean00/redimark",
+        "description": `As someone who has never been a big fan of the bookmark bar, I've always navigated to websites by typing and clicking through sites as fast 
+        as I possibly could. Once I reached MIT, I had my first experience with Go links with HackMIT. I later built a similar short-link system for MIT Student 
+        Events Board. I realized that I became so dependent on this system that I wanted one for my own personal use.`,
+        "photo": process.env.PUBLIC_URL + "/imgs/redimark.png",
+        "tech": "HTML, CSS, JavaScript"
+    },
+    {
+        "name": "Aurora",
+        "year": 2022,
+        "url": "https://aurora-d6aaa.web.app/",
+        "description": `For our final project for CMS.611, our team was required to create a video game full-fledged video game 
+        with story, custom-made graphics, sounds, music, and game logic. Our team continued to develop our previous BEAM concept and 
+        we evolved to Aurora, which we believe was a good step in the evolution of our project over the semester.`,
+        "photo": process.env.PUBLIC_URL + "/imgs/aurora.png",
+        "tech": "Unity"
+    },
+    {
+        "name": "BEAM",
+        "year": 2022,
+        "url": "https://beam-925b9.web.app/",
+        "description": `As one of our intermediate projects of CMS.611, we were required to prototype a video game concept. Our team decided
+        to explore the concept of limiting vision for our game. Players were only able to see their surroundings in a echolocation-ish manner that
+        we thought lended well to an unique aesthetic.`,
+        "photo": process.env.PUBLIC_URL + "/imgs/beam.png",
+        "tech": "Unity"
+    },
+    {
         "name": "Nutrition Hero",
         "year": 2022,
         "url": "https://github.com/knightsean00/hippo",
