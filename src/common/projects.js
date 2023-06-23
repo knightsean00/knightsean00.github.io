@@ -79,7 +79,7 @@ const projects = [
     {
         "name": "Melodiq",
         "year": 2021,
-        "url": "https://melodiq.herokuapp.com/",
+        "url": "https://melodiq.onrender.com/",
         "description": `An online multiplayer music guessing game powered by Spotify that I built with one of my good friends. 
         This project has likely been one of my most rewarding because I was able to create something that my friends were
         able to use and enjoy. It was due to games such as these that my friends and I were able to retain our sanity during quarantine.`,
