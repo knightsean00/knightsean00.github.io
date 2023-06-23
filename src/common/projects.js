@@ -57,7 +57,7 @@ const projects = [
     {
         "name": "Motion Object Illusion",
         "year": 2021,
-        "url": process.env.PUBLIC_URL + "/projects/visual-illusion/index.html",
+        "url": process.env.PUBLIC_URL + "/saved-projects/visual-illusion/index.html",
         "description": `This was another illusion that I developed for the class 9.35: Perception. The ultimate goal of this illusion
         was to better understand what mode of concealment had the most perceivable effect on object recognition ability. The brain
         has the incredibly ability to reconstruct and perceive an object, even when important details may be separated in time and space. Although 
@@ -68,7 +68,7 @@ const projects = [
     {
         "name": "Stochastic Frequency Modulation Illusion",
         "year": 2021,
-        "url": process.env.PUBLIC_URL + "/projects/auditory-illusion/index.html",
+        "url": process.env.PUBLIC_URL + "/saved-projects/auditory-illusion/index.html",
         "description": `In our daily lives, our brain performs the incredible feat of filling in lost information. However, this 
         ability of the brain is best put on display when tones are interrupted by loud, yet brief noise bursts. During the noise burst,
         the tone actually stops, but the brain will perceive continuity through the interruption. In this illusion
